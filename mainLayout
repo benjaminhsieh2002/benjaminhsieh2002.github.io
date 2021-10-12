@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <title>
+        Linguistory
+    </title>
+    <head>
+        <link href = "style.css">
+
+         <!-- documentation at http://getbootstrap.com/docs/4.3/, alternative themes at https://bootswatch.com/ -->
+         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+         
+    </head>
+
+    <body>
+   
+        <nav class="navbar sticky-top navbar-custom navbar-light bg-light border">
+           
+              <a class="navbar-brand" href="#"> 
+                <img src="/etymLogo.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
+                <span class="purple">Linguistory</span></a>
+                
+                <div class="navbar-nav">
+                  <a class="nav-link active ml-auto mt-2" aria-current="page" href="/contact">Contact</a>
+                </div>
+          
+          </nav>  
+          
+          
+    <main>
+        
+          <header class="textAnalysis">
+              Analyze Text
+          </header>
+          <div class="analyze">
+            <form class="textBox">
+                <input class="form-control me-2" type="search" placeholder="Type or paste text here" >
+              </form>
+          </div>
+
+          <header>
+              Key
+          </header>
+         
+         <div>
+         <ul class="list-group">
+
+  <li class="list-group-item list-group-item-romance">Romance</li>
+  <li class="list-group-item list-group-item-germanic">Germanic</li>
+  <li class="list-group-item list-group-item-other">Other</li> 
+  </ul>
+         </div>
+        </main>
+
+    </body>
+
+</html>
