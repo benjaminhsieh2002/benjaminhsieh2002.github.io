@@ -1,0 +1,43 @@
+nav .navbar-brand
+{
+    font-size: xx-large;
+    color: #776871;
+    font-family: "Lucida Console", "Courier New", monospace;
+
+}
+
+nav .navbar .bg-light{
+color: red;
+}
+
+nav .navbar-brand .purple
+{
+    color: #776871;
+}
+
+.textBox{
+  
+  width: auto;
+}
+
+main .list-group-item-romance{
+  background-color: #c4d7f2;
+}
+
+main .list-group-item-germanic{
+  background-color: #afdedc;
+}
+
+main .list-group-item-other{
+  background-color: #91a8a4;
+}
+
+body{
+  background-color: #F0F7EE;
+  }
+
+header .textAnalysis
+{
+  
+  color: red;
+}
