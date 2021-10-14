@@ -11,5 +11,5 @@
 * Make textbox centered
 * Make final decision on color scheme
 * Remove ugly empty space ot the righrt of textbox / on both sides of textbox
- * This will require making the percentae analysis and key be on the same line as the textbox itself.
+  * This will require making the percentae analysis and key be on the same line as the textbox itself.
 * Add dynamic highlighting
