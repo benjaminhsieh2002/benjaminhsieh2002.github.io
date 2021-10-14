@@ -1,43 +1,103 @@
-
-html {
+.textBox{
   
-}
-
-body {
-  font-family: "Helvetica", sans-serif;
+    width: auto;
+    color: #fffbecff;
+    border : 20px #776871;
+    position: fixed;
+    right: 5;
+    top: 5;
+  }
   
-}
+  .textAnalysis{
+  
+      color: #776871;
+      font-size: xx-large;
+      font-family: "Lucida Console", "Courier New", monospace;
+  
+  
+  }
+  
+  .key{
+  
+      color: #776871;
+      font-size: xx-large;
+      font-family: "Lucida Console", "Courier New", monospace;
+  
+  
+  }
+  
+  .box-percent{
+      color: #776871;
+      font-size: medium;
+      font-family: "Lucida Console", "Courier New", monospace;
+  }
+  
+  .list-group{
+      font-size: large;
+      font-family: "Lucida Console", "Courier New", monospace;
+  
+  
+  }
+  
 
-.test{
-   display: inline-block;
-   color: blue;
-   margin: 0  auto;
-   border: 3px;
-   border-color: black;
-   border-style: solid;
+  .title{
+      font-size: xx-large;
+      font-family: "Lucida Console", "Courier New", monospace;
+      text-align: left;
+      color: #c4d7f2;
+      float: left;
+      background-color: #776871;
+  
+  }
+.contact{
+  
+      color: #c4d7f2;
+      float: right;
+      font-size: x-large;
+      font-family: "Lucida Console", "Courier New", monospace;
+      background-color: #776871;
+      
+  }
+ .contact-right{
    
-}
-
-.header {
-   overflow: hidden;
-   background-color: #CED3DC;
-   width: auto;
-   height: 40px;
-   margin-top: -8px;
-   margin-left: -10px;
-   border-bottom: 5px solid #ABA9C3;
-   border-top: 5px solid white;
-}
-
-a.headLink{
-  color: red;
+         text-align: right;
+ }
   
+  .navbar{
+    background-color: #776871;
+  }
   
-}
-
-.textBox {
+    
+  main {
   
+      background-color: #F0f7ee;
+  }
   
-}
-
-.headerBox {}
+  main .list-group-item-romance{
+    background-color: #c4d7f2;
+    border : 20px #776871;
+  }
+  
+  .box{
+  
+      border: 10px #776871;
+  }
+  
+  main .list-group-item-germanic{
+    background-color: #afdedc;
+    border : 20px #776871;
+  }
+  
+  main .list-group-item-other{
+    background-color: #91a8a4;
+    border: 20px #776871;
+  }
+  
+  body{
+    background-color: #F0F7EE;
+    }
+  
+  textarea {
+      background-color: #fffbecff;
+      resize : none;
+  }
