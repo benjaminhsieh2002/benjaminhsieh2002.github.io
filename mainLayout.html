@@ -4,23 +4,28 @@
         Linguistory
     </title>
     <head>
-        <link href = "style2.css">
+        <link href = "style.css">
 
          <!-- documentation at http://getbootstrap.com/docs/4.3/, alternative themes at https://bootswatch.com/ -->
          <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+
+         <link href="/etymLogo.png" rel="icon">
          
     </head>
 
     <body>
    
-        <nav class="navbar sticky-top navbar-custom navbar-light bg-light border">
-           
-              <a class="navbar-brand" href="#"> 
-                <img src="/etymLogo.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
-                <span class="purple">Linguistory</span></a>
+<nav class="topNav-custom sticky-top">
+           <div class="topNav sticky-top">
+              <a class="title" href="#"> 
+                  Linguistory
+                <!--<img src="/etymLogo.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
+                <span class="purple">Linguistory</span> --></a>
                 
-                <div class="navbar-nav">
-                  <a class="nav-link active ml-auto mt-2" aria-current="page" href="/contact">Contact</a>
+
+ <a class="contact"  href="#contact">Contact</a>
+
+            
                 </div>
           
           </nav>  
@@ -28,16 +33,26 @@
           
     <main>
         
-          <header class="textAnalysis">
-              Analyze Text
-          </header>
-          <div class="analyze">
-            <form class="textBox">
-                <input class="form-control me-2" type="search" placeholder="Type or paste text here" >
-              </form>
+        
+          <div>
+            <textarea id="textBox" name="textBox" rows="20" cols="50" placeholder="Type or paste text here"></textarea>
+            
           </div>
 
-          <header>
+          <header class="textAnalysis">
+            Analysis
+        </header>
+
+        <div class="box">
+            <ul>
+                <li class="box-percent box-percent-Romance">x % Romance</li>
+                <li class="box-percent box-percent-Germanic">y % Germanic</li>
+                <li class="box-percent box-percent-Other">z % Other</li>
+            </ul>
+
+        </div>
+
+          <header class="key">
               Key
           </header>
          
@@ -52,5 +67,13 @@
         </main>
 
     </body>
+
+
+
+
+
+
+
+
 
 </html>
