@@ -27,6 +27,9 @@ function App() {
         <p>
           {word} has value {getStringListOfEtymologies(word)}
         </p>
+        <p>
+          {word} is in the dictionary: {hasWord("dog")}
+        </p>
       </header>
     </div>
   );
@@ -59,6 +62,15 @@ function parseDictionary(){
       curListOfEtymologies.push(remainder);
     }
     dictionary[hash(curWord)] = curListOfEtymologies;
+  }
+}
+
+function hasWord(wordP){
+  if(dictionary[hash(wordP)] == null){
+    return "false";
+  }
+  else{
+    return "true";
   }
 }
 
