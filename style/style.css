@@ -48,3 +48,59 @@
       float: left;
       background-color: #776871;
   
+<<<<<<< HEAD
+=======
+  }
+.contact{
+  
+      color: #c4d7f2;
+      float: right;
+      font-size: x-large;
+      font-family: "Lucida Console", "Courier New", monospace;
+      background-color: #776871;
+      
+  }
+ .contact-right{
+   
+         text-align: right;
+ }
+  
+  .navbar{
+    background-color: #776871;
+  }
+  
+    
+  main {
+  
+      background-color: #F0f7ee;
+  }
+  
+  main .list-group-item-romance{
+    background-color: #c4d7f2;
+    border : 20px #776871;
+  }
+  
+  .box{
+  
+      border: 10px #776871;
+  }
+  
+  main .list-group-item-germanic{
+    background-color: #afdedc;
+    border : 20px #776871;
+  }
+  
+  main .list-group-item-other{
+    background-color: #91a8a4;
+    border: 20px #776871;
+  }
+  
+  body{
+    background-color: #F0F7EE;
+    }
+  
+  textarea {
+      background-color: #fffbecff;
+      resize : none;
+  }
+>>>>>>> layout

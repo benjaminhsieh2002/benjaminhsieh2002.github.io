@@ -13,6 +13,7 @@
 * Remove ugly empty space ot the righrt of textbox / on both sides of textbox
   * This will require making the percentae analysis and key be on the same line as the textbox itself.
 * Add dynamic highlighting
+<<<<<<< HEAD
 
 # Getting Started with Create React App
 
@@ -84,3 +85,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `yarn build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+=======
+>>>>>>> layout
