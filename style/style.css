@@ -1,0 +1,50 @@
+.textBox{
+  
+    width: auto;
+    color: #fffbecff;
+    border : 20px #776871;
+    position: fixed;
+    right: 5;
+    top: 5;
+  }
+  
+  .textAnalysis{
+  
+      color: #776871;
+      font-size: xx-large;
+      font-family: "Lucida Console", "Courier New", monospace;
+  
+  
+  }
+  
+  .key{
+  
+      color: #776871;
+      font-size: xx-large;
+      font-family: "Lucida Console", "Courier New", monospace;
+  
+  
+  }
+  
+  .box-percent{
+      color: #776871;
+      font-size: medium;
+      font-family: "Lucida Console", "Courier New", monospace;
+  }
+  
+  .list-group{
+      font-size: large;
+      font-family: "Lucida Console", "Courier New", monospace;
+  
+  
+  }
+  
+
+  .title{
+      font-size: xx-large;
+      font-family: "Lucida Console", "Courier New", monospace;
+      text-align: left;
+      color: #c4d7f2;
+      float: left;
+      background-color: #776871;
+  
