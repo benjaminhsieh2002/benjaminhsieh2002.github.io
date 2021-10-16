@@ -1,4 +1,6 @@
-# benjaminhsieh2002.github.io
+# Linguistory
+
+The web app that traces the ancestry of your writing.
 
 # Trello Board:
 
