@@ -1,5 +1,4 @@
 .textBox{
-  
     width: auto;
     color: #fffbecff;
     border : 20px #776871;
@@ -9,21 +8,15 @@
   }
   
   .textAnalysis{
-  
       color: #776871;
       font-size: xx-large;
       font-family: "Lucida Console", "Courier New", monospace;
-  
-  
   }
   
   .key{
-  
       color: #776871;
       font-size: xx-large;
       font-family: "Lucida Console", "Courier New", monospace;
-  
-  
   }
   
   .box-percent{
@@ -35,8 +28,6 @@
   .list-group{
       font-size: large;
       font-family: "Lucida Console", "Courier New", monospace;
-  
-  
   }
   
 
@@ -47,10 +38,8 @@
       color: #c4d7f2;
       float: left;
       background-color: #776871;
-  
-<<<<<<< HEAD
-=======
   }
+
 .contact{
   
       color: #c4d7f2;
@@ -61,7 +50,6 @@
       
   }
  .contact-right{
-   
          text-align: right;
  }
   
@@ -71,7 +59,6 @@
   
     
   main {
-  
       background-color: #F0f7ee;
   }
   
@@ -103,4 +90,3 @@
       background-color: #fffbecff;
       resize : none;
   }
->>>>>>> layout
