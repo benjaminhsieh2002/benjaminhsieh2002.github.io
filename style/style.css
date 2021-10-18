@@ -1,26 +1,33 @@
 .textBox{
+  
     width: auto;
     color: #fffbecff;
-    border : 20px #776871;
+    border : 20px #5b616a;
     position: fixed;
     right: 5;
     top: 5;
   }
   
   .textAnalysis{
-      color: #776871;
+  
+      color: #5b616a;
       font-size: xx-large;
       font-family: "Lucida Console", "Courier New", monospace;
+  
+  
   }
   
   .key{
-      color: #776871;
+  
+      color: #5b616a;
       font-size: xx-large;
       font-family: "Lucida Console", "Courier New", monospace;
+  
+  
   }
   
   .box-percent{
-      color: #776871;
+      color: #5b616a;
       font-size: medium;
       font-family: "Lucida Console", "Courier New", monospace;
   }
@@ -28,6 +35,8 @@
   .list-group{
       font-size: large;
       font-family: "Lucida Console", "Courier New", monospace;
+  
+  
   }
   
 
@@ -37,56 +46,60 @@
       text-align: left;
       color: #c4d7f2;
       float: left;
-      background-color: #776871;
+      background-color: #5b616a;
+  
   }
-
 .contact{
   
       color: #c4d7f2;
       float: right;
       font-size: x-large;
       font-family: "Lucida Console", "Courier New", monospace;
-      background-color: #776871;
+      background-color: #5b616a;
       
   }
  .contact-right{
+   
          text-align: right;
  }
   
   .navbar{
-    background-color: #776871;
+    background-color: #5b616a;
   }
   
     
   main {
-      background-color: #F0f7ee;
+  
+      background-color: white;
   }
   
   main .list-group-item-romance{
-    background-color: #c4d7f2;
-    border : 20px #776871;
+    background-color: #Aba9c3;
+    border : 20px #5b616a;
   }
   
   .box{
   
-      border: 10px #776871;
+      border: 10px #5b616a;
   }
   
   main .list-group-item-germanic{
-    background-color: #afdedc;
-    border : 20px #776871;
+    background-color: #275dad;
+    border : 20px #5b616a;
   }
   
   main .list-group-item-other{
-    background-color: #91a8a4;
-    border: 20px #776871;
+    background-color: #A3b9c9;
+    border: 20px #5b616a;
   }
   
   body{
-    background-color: #F0F7EE;
+    background-color: white;
     }
   
   textarea {
-      background-color: #fffbecff;
-      resize : none;
+      background-color: #Ced3dc;
+      resize: none;
+      
   }
+  
