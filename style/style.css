@@ -2,26 +2,48 @@
   
     width: auto;
     color: #fffbecff;
-    border : 20px #5b616a;
-    position: fixed;
-    right: 5;
-    top: 5;
+    border: 1px solid black;
+
+    
   }
+ 
+ .inputBox{
+   margin-left: 15px;
+   margin-top: 25px;
+   margin-bottom: 15px;
+   border: 1px solid black;
+   
+   
+   
+ }
   
   .textAnalysis{
   
       color: #5b616a;
       font-size: xx-large;
       font-family: "Lucida Console", "Courier New", monospace;
+      margin-left: 15px;
   
   
+
   }
-  
+
+.flex-container {
+    display: flex;
+}
+
+.flex-child {
+    flex: 1;
+   
+}  
+
+
   .key{
   
       color: #5b616a;
       font-size: xx-large;
       font-family: "Lucida Console", "Courier New", monospace;
+      margin-left: 15px;
   
   
   }
@@ -35,6 +57,9 @@
   .list-group{
       font-size: large;
       font-family: "Lucida Console", "Courier New", monospace;
+      margin-right: 15px;
+      margin-left: 15px;
+
   
   
   }
@@ -76,30 +101,36 @@
   main .list-group-item-romance{
     background-color: #Aba9c3;
     border : 20px #5b616a;
+    border: 1px solid black;
   }
   
   .box{
-  
-      border: 10px #5b616a;
+    border: 1px solid black;
+    margin-right: 15px;
+    margin-left: 15px;
+    background-color: #Ced3dc;
   }
   
   main .list-group-item-germanic{
     background-color: #275dad;
     border : 20px #5b616a;
+    border: 1px solid black;
   }
   
   main .list-group-item-other{
     background-color: #A3b9c9;
     border: 20px #5b616a;
+    border: 1px solid black;
   }
   
   body{
     background-color: white;
+
     }
   
   textarea {
       background-color: #Ced3dc;
       resize: none;
-      
+  
   }
   
