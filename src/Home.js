@@ -2,35 +2,25 @@ import "./styles.css"
 
 function Home() {
 	return(
-	<!DOCTYPE html>
 		<html>
-		    <title>
+		<title>
 			Linguistory
 		    </title>
 		    <head>
-			<link href = "style.css">
+			<div>
+			<link href = "style.css"/>
 
-			 <!-- documentation at http://getbootstrap.com/docs/4.3/, alternative themes at https://bootswatch.com/ -->
-			 <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+			 <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"/>
 
-			 <link href="/etymLogo.png" rel="icon">
-
+			 <link href="/etymLogo.png" rel="icon" />
+			</div>
 		    </head>
 
 		    <body>
 		  <nav class="navbar sticky-top">
-
-
-
 			      <a class="title" href="#title"> 
 				  Linguistory</a>
-
-
-		       <a class="contact"  href="/contact">Contact</a>
-
-
-
-
+		       <a class="contact"  href="/Contact">Contact</a>
 			  </nav>  
 
 
