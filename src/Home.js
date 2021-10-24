@@ -1,4 +1,4 @@
-import "./styles.css"
+import "./style/style.css"
 
 function Home() {
 	return(
@@ -60,6 +60,7 @@ function Home() {
 		  <li class="list-group-item list-group-item-other">Other</li> 
 		  </ul>
 			 </div>
+			 <div class="Test"> Testing styles.css</div>
 			</div>
 
 			</div>
