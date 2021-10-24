@@ -1,0 +1,35 @@
+Using JavaScript and HTML to count the number of characters in a
+textbox and displaying the result in another textbox. This will
+be useful for the midpoint showcase.
+- Sean
+
+-------------- HTML
+
+<html>
+<head>
+
+</head>
+<body>
+   <textarea class="inputBox" id="inputBox" name="textBox" rows="20" cols="50" placeholder="Type or paste text here"> Marco? </textarea>
+   <textarea class="outputBox" id="outputBox" name="textBox" rows="20" cols="50" placeholder="Type or paste text here"> Number of words in input:  </textarea>
+   <button class="textButton" onclick='inputText(numChars("inputBox"))'>Press Here to Add Text to Textbox</button>
+</body>
+</html>
+
+
+
+
+-------------- JavaScript
+
+
+function inputText(input) {
+	var testBox = document.getElementById("outputBox");
+  testBox.value += input;
+	return null;
+}
+function numChars(boxID) {
+	alert(boxID);
+	var box = document.getElementById("inputBox");
+  var numChars = box.value.length;
+  return numChars;
+}

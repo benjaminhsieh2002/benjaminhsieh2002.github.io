@@ -20,7 +20,7 @@ function Home() {
 		  <nav class="navbar sticky-top">
 			      <a class="title" href="#title"> 
 				  Linguistory</a>
-		       <a class="contact"  href="/Contact">Contact</a>
+		       <a class="contact" href="./Contact.js" >Contact</a>
 			  </nav>  
 
 
@@ -45,6 +45,7 @@ function Home() {
 				<li class="box-percent box-percent-Romance">x % Romance</li>
 				<li class="box-percent box-percent-Germanic">y % Germanic</li>
 				<li class="box-percent box-percent-Other">z % Other</li>
+
 			    </ul>
 		</div>
 
