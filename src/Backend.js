@@ -53,13 +53,6 @@ export function getValue(wordP){
   return "Other";
 }
 
-// given a single string of words seperated by spaces, returns list of valid words
-export function seperateInput(stringP){
-  var manipulateString = stringP;
-  while(indexOf){
-
-  }
-}
 
 //
 // IT IS SAFE TO IGNORE ALL BELOW CODE
