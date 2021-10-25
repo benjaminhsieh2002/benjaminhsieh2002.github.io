@@ -1,4 +1,7 @@
 import "./style/style.css"
+import hash from "./Backend"
+import {increment} from "./Backend"
+import "./Backend"
 
 function Home() {
 	return(
@@ -62,6 +65,8 @@ function Home() {
 		  </ul>
 			 </div>
 			 <div class="Test"> Testing styles.css</div>
+			 <p>Hello!</p>
+			<button onclick={hash('immaculate')}> Hash "Immaculate" </button>
 			</div>
 
 			</div>
@@ -74,5 +79,4 @@ function Home() {
 		</html>
 	)
 }
-
 export default Home;

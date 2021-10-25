@@ -31,6 +31,10 @@ function Backend() {
   );
 }
 
+export function increment(number) {
+  alert(number + 1);
+}
+
 function parseDictionary(){
   var lines = [];
 
@@ -85,7 +89,7 @@ function getStringListOfEtymologies(wordP){
 }
 
 //hash function code provided by the internet
-function hash(stringP){
+export function hash(stringP){
   var h = 0;
   var i = 0;
   for(i = 0; i < stringP.length; i++){
