@@ -18,11 +18,10 @@ function Home() {
 
 		    <body>
 		  <nav class="navbar sticky-top">
-			      <a class="title" href="#title"> 
+			      <a class="title" href="/"> 
 				  Linguistory</a>
-		       <a class="contact" href="./Contact.js" >Contact</a>
+		       <a class="contact" href="/contact" >Contact</a>
 			  </nav>  
-
 
 		    <main>
 
@@ -31,7 +30,7 @@ function Home() {
 			  <div class="flex-child">
 
 
-			    <textarea class="inputBox" id="textBox" name="textBox" rows="20" cols="50" placeholder="Type or paste text here"></textarea>
+			    <textarea class="inputBox" id="textBox" name="textBox" rows="13" cols="75"  placeholder="Type or paste text here"></textarea>
 
 			  </div>
 		<div class="flex-child">
