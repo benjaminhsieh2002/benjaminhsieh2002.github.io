@@ -16,9 +16,6 @@ function Backend() {
           {word} is hash # {hash(word)}
         </p>
         <p>
-          {word} has value {getStringListOfEtymologies(word)}
-        </p>
-        <p>
           {word} is in the dictionary: {hasWord("dog")}
         </p>
 	</div>
