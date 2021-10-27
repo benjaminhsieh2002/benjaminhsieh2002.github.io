@@ -5,7 +5,7 @@ function Contact() {
 		<html>
 			<div>This is a contact page.</div>
 		</html>
-	)
+	);
 }
 
 export default Contact;
