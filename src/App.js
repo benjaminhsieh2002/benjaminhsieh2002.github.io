@@ -1,14 +1,13 @@
 import "./styles.css"
-import Home from "./Home.js"
 import Backend from "./Backend.js"
-import Contact from "./Contact.js"
+import React from "react"
+import Main from "./Main.js"
 
 function App() {
 
 	return(
 		<div>
-			<Home/>
-			<Contact/>
+			<Main />
 			<Backend/>
 		</div>
 	);

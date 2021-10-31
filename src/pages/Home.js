@@ -1,7 +1,7 @@
-import "./style/style.css"
-import hash from "./Backend"
-import {increment} from "./Backend"
-import "./Backend"
+import "../style/style.css"
+import hash from "../Backend"
+import "../Backend"
+import { Link } from "react-router-dom";
 
 function Home() {
 	return(
@@ -23,7 +23,11 @@ function Home() {
 		  <nav class="navbar sticky-top">
 			      <a class="title" href="/"> 
 				  Linguistory</a>
-		       <a class="contact" href="/contact" >Contact</a>
+				<Link to="/contact">
+						<button variant="outlined">
+						Contact
+						</button>
+				</Link>
 			  </nav>  
 
 		    <main>
