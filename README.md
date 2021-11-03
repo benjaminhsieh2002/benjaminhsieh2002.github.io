@@ -1,4 +1,4 @@
-# Linguistory
+# Traceroot
 
 The web app that traces the ancestry of your writing.
 
