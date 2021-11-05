@@ -1,11 +1,14 @@
 import "../style/style.css"
+import React from "react"
 import hash from "../Backend"
 import "../Backend"
 import { Link } from "react-router-dom";
+import Textbox from "./pageComponents/Textbox"
 
-function Home() {
-	return(
-		<html>
+class Home extends React.Component {
+	render() {
+		return(
+			<html>
 		<title>
 			Linguistory
 		    </title>
@@ -34,12 +37,8 @@ function Home() {
 
 
 		     <div class="flex-container">
-			  <div class="flex-child">
+				 <Textbox />
 
-
-			    <textarea class="inputBox" id="textBox" name="textBox" rows="13" cols="75"  placeholder="Type or paste text here"></textarea>
-
-			  </div>
 		<div class="flex-child">
 
 			  <header class="textAnalysis">
@@ -80,6 +79,11 @@ function Home() {
 		    </body>
 
 		</html>
-	)
+
+		)
+
+	}
+
+
 }
 export default Home;
