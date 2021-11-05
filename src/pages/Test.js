@@ -9,17 +9,9 @@ class Test extends React.Component {
                 <div>To test the homepage, go to /home</div>
                 <div>To test the contact page, go to /contact</div>
                 <div>For updates or other URLs, consult Main.js</div>
-
             </div>
-
-
         )
-
-
-
     }
-
-
 }
 
 export default Test

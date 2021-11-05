@@ -12,7 +12,6 @@ class Textbox extends React.Component {
   updateWordCount(textarea) {
     let text = textarea.target.value;
     this.setState({ wordCount: this.countWords(text)});
-    console.log(this.state.wordCount);
   }
 
   countWords(text) {
