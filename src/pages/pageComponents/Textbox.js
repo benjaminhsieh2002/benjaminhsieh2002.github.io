@@ -1,4 +1,5 @@
 import React from "react";
+import "../../style/Style.css"
 
 class Textbox extends React.Component {
   constructor(props) {
@@ -21,17 +22,15 @@ class Textbox extends React.Component {
   render() {
     return (
         <div>
-            <div className="flex-child">
                 <textarea
                 className="inputBox"
                 id="textBox"
                 name="textBox"
-                rows="13"
-                cols="80"
+                rows="15"
+                cols="75"
                 placeholder="Type or paste text here"
                 onChange={this.updateWordCount}
                 ></textarea>
-            </div>
             <div>WordCount: {this.state.wordCount}</div>
         </div>
       

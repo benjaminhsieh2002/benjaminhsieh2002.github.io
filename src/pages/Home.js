@@ -1,4 +1,4 @@
-import "../style/style.css"
+import "../style/Style.css"
 import React from "react"
 import hash from "../Backend"
 import "../Backend"
@@ -8,37 +8,15 @@ import Textbox from "./pageComponents/Textbox"
 class Home extends React.Component {
 	render() {
 		return(
-			<html>
-		<title>
-			Linguistory
-		    </title>
-		    <head>
-			<div>
-			<link href = "style.css"/>
-
-			 <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"/>
-
-			 <link href="/etymLogo.png" rel="icon" />
-			</div>
-		    </head>
-
-		    <body>
-		  <nav class="navbar sticky-top">
-			      <a class="title" href="/"> 
-				  Linguistory</a>
-				<Link to="/contact">
-						<button variant="outlined">
-						Contact
-						</button>
-				</Link>
-			  </nav>  
+		<div>
 
 		    <main>
 
 
 		     <div class="flex-container">
-				 <Textbox />
-
+			<div class="flex-child">	
+			 <Textbox />
+			</div>
 		<div class="flex-child">
 
 			  <header class="textAnalysis">
@@ -76,9 +54,8 @@ class Home extends React.Component {
 
 			</main>
 
-		    </body>
 
-		</html>
+		</div>
 
 		)
 
