@@ -221,11 +221,13 @@ html, body, body > div, .app {
  
 .flip-card {
 	background-color: transparent;
-	width: 300px;
+	width: 85%;
 	height: 500px;
 	perspective: 1000px;
 	margin-left:30px;
 	margin-bottom: 30px;
+	margin-right: 30px;
+	maring-top: 30px;
 	
 }
  
