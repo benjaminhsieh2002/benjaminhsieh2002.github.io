@@ -6,6 +6,7 @@ var seperatorChar = ':';
 
 function Backend() {
   var word = "cat";
+  var test = "Cat dog!"
   parseDictionary();
   return (
 	<div>
@@ -17,6 +18,9 @@ function Backend() {
         </p>
         <p>
           {word} is in the dictionary: {hasWord("dog")}
+        </p>
+	<p>
+          {test} has value {seperateInput(test)}
         </p>
 	</div>
   );
@@ -50,6 +54,30 @@ export function getValue(wordP){
   return "Other";
 }
 
+// given a single string of words seperated by spaces, returns list of valid words
+export function seperateInput(stringP){
+  let strings = stringP.split(" ");
+  let i = 0;
+  for(i = 0; i < strings.length; i++){ // for each word
+    let newString = "";
+    for(let j = 0; j < strings[i].length; j++){ // for each char
+      let c = strings[i].charCodeAt(j);
+      let updatedC;
+      if(c > 64 && c < 91){
+        updatedC = String.fromCharCode(c + 32);
+        newString += updatedC;
+      }
+      else if ((c < 65 || c > 122 ) || (c > 90 && c < 97)){
+        //do nothing
+      }
+      else{
+        newString += String.fromCharCode(c);
+      }
+    }
+    strings[i] = newString;
+  }
+  return strings;
+}
 
 //
 // IT IS SAFE TO IGNORE ALL BELOW CODE
