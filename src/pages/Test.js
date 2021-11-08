@@ -1,4 +1,5 @@
 import React from "react"
+import "../style/style.css"
 
 
 class Test extends React.Component {

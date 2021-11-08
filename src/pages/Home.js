@@ -1,4 +1,4 @@
-import "../style/Style.css"
+import "../style/style.css"
 import React from "react"
 import hash from "../Backend"
 import "../Backend"
