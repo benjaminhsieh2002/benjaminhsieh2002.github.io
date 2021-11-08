@@ -1,5 +1,5 @@
 import React from "react";
-import "../../style/Style.css"
+import "../../style/style.css"
 
 class Textbox extends React.Component {
   constructor(props) {
