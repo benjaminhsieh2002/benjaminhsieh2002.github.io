@@ -267,3 +267,7 @@ html, body, body > div, .app {
 	width:100% ;
 }
 
+.bio{
+	margin-left: 15px;
+	margin-right:15px;
+}
