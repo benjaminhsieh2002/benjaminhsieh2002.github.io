@@ -1,5 +1,5 @@
 import React from "react";
-import { Switch, Route, BrowserRouter } from 'react-router-dom';
+import { Route, BrowserRouter } from 'react-router-dom';
 
 import Home from './pages/Home'
 import Contact from './pages/Contact'
@@ -10,10 +10,8 @@ const Main = () => {
     return(
         <BrowserRouter>
 	    <Navbar/>
-            <Switch>
                 <Route exact path='/' exact component={Home}/> 
                 <Route exact path='/contact' exact component={Contact}/> 
-            </Switch>
         </BrowserRouter>
 
     );
