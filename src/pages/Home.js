@@ -12,9 +12,9 @@ class Home extends React.Component {
 	render() {
 		return(
 		<div>
-
+			
 		    <main>
-
+			<body>		
 
 		     <div class="flex-container">
 			<div class="flex-child">	
@@ -32,7 +32,7 @@ class Home extends React.Component {
 			</div>
 			</div>
 
-
+			</body>
 			</main>
 
 
