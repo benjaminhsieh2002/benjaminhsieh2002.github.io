@@ -18,12 +18,13 @@ class Home extends React.Component {
 
 		     <div class="flex-container">
 			<div class="flex-child">	
-			 <Textbox />
+				<br/>
+				 <Textbox />
 			</div>
 		<div class="flex-child">
-
+		<br/>
 		<TextAnalysis />
-
+		<br/>
 		<Key />
 
 			 <TestingStyles />

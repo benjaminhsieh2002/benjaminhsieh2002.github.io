@@ -1,9 +1,10 @@
 import React from "react";
 import "../style/style.css"
-import SophiaPicture from "../pictures/Sophia.jpg"
-import BoPicture from "../pictures/Bo.jpg"
-import BenjaminPicture from "../pictures/BenjaminPhoto.jpg"
-import SeanPicture from "../pictures/Sean.jpg"
+import SophiaPicture from "../pictures/Sophia.jpeg"
+import BoPicture from "../pictures/Bo.jpeg"
+import BenjaminPicture from "../pictures/Benjamin.jpeg"
+import SeanPicture from "../pictures/Sean.jpeg"
+import ConnorPicture from "../pictures/Connor.jpg"
  
 function Contact() {
 	return(
@@ -32,7 +33,7 @@ function Contact() {
 										<br/>
 										<a href = "mailto: sophiaweiler@ucsb.edu">sophiaweiler@ucsb.edu</a>
 										<br/> <br/>
-										<p class="bio">Sophia is a first year Computer Science major. Originally from the Bay Area, she grew up learning about technology and is a big advocate for growing women's representation in the STEM field. When not coding,you can find her at the beach enjoying Santa Barbara's beautiful sunsets or at a theatre performance, since she has been an actress herself since age 6.</p>
+										<p class="bio">Sophia is a first year Computer Science major. Originally from the Bay Area, she grew up learning about technology and is a big advocate for growing women's representation in the STEM field. When not coding, you can find her at the beach enjoying Santa Barbara's beautiful sunsets or at a theatre performance, since she has been an actress herself since age 6.</p>
 									</div>
 								</div>
 							</div>
@@ -70,7 +71,7 @@ function Contact() {
 							<div class="flip-card">
                                                                   <div class=  "flip-card-inner">
                                                                          <div class="flip-card-front">
-                                                                                 <img src={SophiaPicture}  alt={"Connor Duncan"} class="pictureSize"/>
+                                                                                 <img src={ConnorPicture}  alt={"Connor Duncan"} class="pictureSize"/>
                                                                                  <br/>
                                                                                  <br/>
                                                                                  <h4 class="name"><b>Connor Duncan</b></h4>
@@ -82,7 +83,7 @@ function Contact() {
 										 <br/>
                                                                                  <a href = "mailto: connorduncan@ucsb.edu">connorduncan@ucsb.edu</a>
 										 <br/> <br/>
-                                                                                 <p class="bio">phone number</p>
+                                                                                 <p class="bio">I am currently a freshman majoring in Computer Science at the University of California, Santa Barbara. In my free time, I like to travel, try new foods, and go on hikes.</p>
                                                                          </div>
                                                                  </div>
                                                          </div>
@@ -102,7 +103,7 @@ function Contact() {
 										 <br/>
                                                                                  <a href = "mailto: hhsieh@ucsb.edu">hhsieh@ucsb.edu</a>
 										 <br/> <br/>
-                                                                                 <p class="bio">phone number</p>
+                                                                                 <p class="bio">Benjamin is an international student from Taiwan at UC Santa Barbara majoring in mathematics. He is extremely passionate about computer science, and he had worked on numerous independent coding projects in high school. In his spare time, he likes to run, play the piano, and trade cryptocurrencies.</p>
                                                                          </div>
                                                                  </div>
                                                          </div>
@@ -123,7 +124,11 @@ function Contact() {
 										 <br/>
                                                                                  <a href = "mailto: bkizildag@ucsb.edu">bkizildag@ucsb.edu</a>
 										 <br/> <br/>
-                                                                                 <p class="bio">phone number</p>
+                                                                                 <p class="bio">Aspiring innovator, Engineer-in-the-making. #HanShotFirst. Nano fabrication enthusiast.
+
+(Entrepreneurship * Vision) ^ (hard work) = (Future Goals)
+
+I respect the future. I believe in the future. I worship at its feet.</p>
                                                                          </div>
                                                                  </div>
                                                          </div>

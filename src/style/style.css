@@ -263,6 +263,7 @@ html, body, body > div, .app {
 	color: white;
 	color:#5b616a;
 	transform: rotateY(180deg);
+	overflow: auto;
 }
  
 .pictureSize{
