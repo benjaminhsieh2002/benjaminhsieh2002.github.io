@@ -53,7 +53,7 @@ export function HasWord(wordP){
 
 // returns Romance, Germanic, or Other given a word
 export function GetValue(wordP){
-  let num = dictionary[hash(wordP)];
+  let num = dictionary[Hash(wordP)];
   if(num == 0){
     return "Romance";
   }
@@ -64,7 +64,7 @@ export function GetValue(wordP){
 }
 // returns 0, 1, or 2 given a word. same as function 
 export function GetValueNumber(wordP){
-  let num = dictionary[hash(wordP)];
+  let num = dictionary[Hash(wordP)];
 }
 
 // given a single string of words seperated by spaces, returns list of valid words
@@ -157,7 +157,7 @@ export function ParseDictionary(){
           let line = allText.substring(0, allText.indexOf("\n"));
           let curWord = line.substring(0, line.indexOf(seperatorChar));
           let remainder = line.substring(line.indexOf(seperatorChar) + 1);
-          dictionary[hash(curWord)] = remainder;
+          dictionary[Hash(curWord)] = remainder;
           allText = allText.substring(allText.indexOf("\n") + 1);
         }
       }
