@@ -998,3 +998,15 @@ individual:1
 added:1
 early:1
 stag:1
+quick:1
+brown:1
+fox:1
+jump:1
+jumps:1
+over:1
+lazy:1
+dog:1
+rapid:0
+ascends:0
+indolent:0
+canine:0
