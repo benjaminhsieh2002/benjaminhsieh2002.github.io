@@ -107,6 +107,9 @@ export function seperateInput(stringP){
 
 export function getRomancePercent(){
   let percent = 0.0;
+  if(d == 0){
+	  return percent;
+  }
   percent = a / d;
   percent = percent * 100;
   return percent;
@@ -114,12 +117,18 @@ export function getRomancePercent(){
 
 export function getGermanicPercent(){
   let percent = 0.0;
+  if(d == 0){
+	  return percent;
+  }
   percent = b / d;
   percent = percent * 100;
   return percent;
 }
 export function getOtherPercent(){
   let percent = 0.0;
+  if(d == 0){
+	  return percent;
+  }
   percent = c / d;
   percent = percent * 100;
   return percent;
