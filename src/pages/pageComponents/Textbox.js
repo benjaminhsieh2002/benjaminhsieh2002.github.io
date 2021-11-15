@@ -19,6 +19,8 @@ class Textbox extends React.Component {
     return text.split(' ').length;
   }
 
+
+
   render() {
     return (
         <div>

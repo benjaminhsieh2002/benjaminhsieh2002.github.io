@@ -1,6 +1,6 @@
 import React from "react"
 import "../../style/style.css"
-import hash from "../../Backend.js"
+import Hash from "../../Backend.js"
 
 class TestingStyles extends React.Component {
     render() {
@@ -8,7 +8,7 @@ class TestingStyles extends React.Component {
         <div>
         <div> class="Test" Testing styles.css </div>
 			<p>Hello!</p>
-			<button onclick={hash('immaculate')}> Hash "Immaculate" </button>
+			<button onclick={Hash('immaculate')}> Hash "Immaculate" </button>
 		</div>
     )
 }
