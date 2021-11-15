@@ -41,7 +41,7 @@ export function Increment(number) {
 
 // returns true if dictionary contains word.
 export function HasWord(wordP){
-  if(dictionary[hash(wordP)] == null){
+  if(dictionary[Hash(wordP)] == null){
     return false;
   }
   else{
