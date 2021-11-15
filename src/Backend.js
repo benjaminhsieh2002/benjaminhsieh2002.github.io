@@ -1,8 +1,13 @@
+
 import './App.css';
 
 // key is hash(word), value is list of language(s) in shorthand
-var dictionary = {};
-var seperatorChar = ':';
+let dictionary = {};
+let seperatorChar = ':';
+let a = 0; // Romance
+let b = 0; // Germanic
+let c = 0; // Other
+let d = 0; // Total Number of Words
 
 function Backend() {
   var word = "cat";
@@ -44,7 +49,7 @@ export function hasWord(wordP){
 
 // returns Romance, Germanic, or Other given a word
 export function getValue(wordP){
-  var num = dictionary[hash(wordP)];
+  let num = dictionary[hash(wordP)];
   if(num == 0){
     return "Romance";
   }
@@ -52,6 +57,10 @@ export function getValue(wordP){
     return "Germanic";
   }
   return "Other";
+}
+// returns 0, 1, or 2 given a word. same as function 
+export function getValueNumber(wordP){
+  let num = dictionary[hash(wordP)];
 }
 
 // given a single string of words seperated by spaces, returns list of valid words
@@ -76,7 +85,44 @@ export function seperateInput(stringP){
     }
     strings[i] = newString;
   }
+  for(let i = 0; i < strings.length; i++){
+    if(hasWord(strings[i])){
+      if(getValueNumber(strings[i]) == 0){
+        a = a + 1;
+      }
+      else if(getValueNumber(strings[i]) == 1){
+        b = b + 1;
+      }
+      else{
+        c = c + 1;
+      }
+    }
+    else{
+      c = c + 1;
+    }
+    d = d + 1;
+  }
   return strings;
+}
+
+export function getRomancePercent(){
+  let percent = 0.0;
+  percent = a / d;
+  percent = percent * 100;
+  return percent;
+}
+
+export function getGermanicPercent(){
+  let percent = 0.0;
+  percent = b / d;
+  percent = percent * 100;
+  return percent;
+}
+export function getOtherPercent(){
+  let percent = 0.0;
+  percent = c / d;
+  percent = percent * 100;
+  return percent;
 }
 
 //
@@ -118,4 +164,3 @@ export function parseDictionary(){
 }
 
 export default Backend;
-
