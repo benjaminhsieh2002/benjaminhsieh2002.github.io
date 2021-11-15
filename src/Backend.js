@@ -70,6 +70,10 @@ export function GetValueNumber(wordP){
 // given a single string of words seperated by spaces, returns list of valid words
 export function SeperateInput(stringP){
   let strings = stringP.split(" ");
+  a = 0;
+  b = 0;
+  c = 0;
+  d = 0;
   let i = 0;
   for(i = 0; i < strings.length; i++){ // for each word
     let newString = "";
@@ -89,7 +93,7 @@ export function SeperateInput(stringP){
     }
     strings[i] = newString;
   }
-  for(let i = 0; i < strings.length; i++){
+  for(i = 0; i < strings.length; i++){
     if(HasWord(strings[i])){
       if(GetValueNumber(strings[i]) == 0){
         a = a + 1;
