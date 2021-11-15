@@ -10,33 +10,37 @@ let c = 0; // Other
 let d = 0; // Total Number of Words
 
 function Backend() {
-  var word = "cat";
-  var test = "Cat dog!"
-  parseDictionary();
+  let word = "cat";
+  let test = "Cat dog!"
+  ParseDictionary();
   return (
 	<div>
         <p>
           Testing word: {word}
         </p>
         <p>
-          {word} is hash # {hash(word)}
+          {word} is hash # {Hash(word)}
         </p>
         <p>
-          {word} is in the dictionary: {hasWord("dog")}
+          {word} is in the dictionary: {HasWord("dog")}
         </p>
-	<p>
-          {test} has value {seperateInput(test)}
+	      <p>
+          {test} has value {SeperateInput(test)}
         </p>
+        <p>
+          Percent Romance: {GetRomancePercent()}
+        </p>
+
 	</div>
   );
 }
 
-export function increment(number) {
+export function Increment(number) {
   alert(number + 1);
 }
 
 // returns true if dictionary contains word.
-export function hasWord(wordP){
+export function HasWord(wordP){
   if(dictionary[hash(wordP)] == null){
     return false;
   }
@@ -48,7 +52,7 @@ export function hasWord(wordP){
 
 
 // returns Romance, Germanic, or Other given a word
-export function getValue(wordP){
+export function GetValue(wordP){
   let num = dictionary[hash(wordP)];
   if(num == 0){
     return "Romance";
@@ -59,12 +63,12 @@ export function getValue(wordP){
   return "Other";
 }
 // returns 0, 1, or 2 given a word. same as function 
-export function getValueNumber(wordP){
+export function GetValueNumber(wordP){
   let num = dictionary[hash(wordP)];
 }
 
 // given a single string of words seperated by spaces, returns list of valid words
-export function seperateInput(stringP){
+export function SeperateInput(stringP){
   let strings = stringP.split(" ");
   let i = 0;
   for(i = 0; i < strings.length; i++){ // for each word
@@ -86,11 +90,11 @@ export function seperateInput(stringP){
     strings[i] = newString;
   }
   for(let i = 0; i < strings.length; i++){
-    if(hasWord(strings[i])){
-      if(getValueNumber(strings[i]) == 0){
+    if(HasWord(strings[i])){
+      if(GetValueNumber(strings[i]) == 0){
         a = a + 1;
       }
-      else if(getValueNumber(strings[i]) == 1){
+      else if(GetValueNumber(strings[i]) == 1){
         b = b + 1;
       }
       else{
@@ -105,30 +109,21 @@ export function seperateInput(stringP){
   return strings;
 }
 
-export function getRomancePercent(){
+export function GetRomancePercent(){
   let percent = 0.0;
-  if(d == 0){
-	  return percent;
-  }
   percent = a / d;
   percent = percent * 100;
   return percent;
 }
 
-export function getGermanicPercent(){
+export function GetGermanicPercent(){
   let percent = 0.0;
-  if(d == 0){
-	  return percent;
-  }
   percent = b / d;
   percent = percent * 100;
   return percent;
 }
-export function getOtherPercent(){
+export function GetOtherPercent(){
   let percent = 0.0;
-  if(d == 0){
-	  return percent;
-  }
   percent = c / d;
   percent = percent * 100;
   return percent;
@@ -138,11 +133,11 @@ export function getOtherPercent(){
 // IT IS SAFE TO IGNORE ALL BELOW CODE
 //
 //hash function code provided by the internet
-export function hash(stringP){
-  var h = 0;
-  var i = 0;
+export function Hash(stringP){
+  let h = 0;
+  let i = 0;
   for(i = 0; i < stringP.length; i++){
-    var ch = stringP.charCodeAt(i);
+    let ch = stringP.charCodeAt(i);
     h = ((h << 5) - h) + ch;
     h = h & h;
   }
@@ -150,18 +145,18 @@ export function hash(stringP){
 }
 
 // opens text file, reads each line, and saves information to dictionary
-export function parseDictionary(){
-  var rawFile = new XMLHttpRequest();
-  var path = "./dictionary.txt";
+export function ParseDictionary(){
+  let rawFile = new XMLHttpRequest();
+  let path = "./dictionary.txt";
   rawFile.open("GET", path, false);
   rawFile.onreadystatechange = function(){
     if(rawFile.readyState === 4){
       if(rawFile.status === 200 || rawFile.status === 0){
-        var allText = rawFile.responseText;
+        let allText = rawFile.responseText;
         while(allText.includes("\n")){
-          var line = allText.substring(0, allText.indexOf("\n"));
-          var curWord = line.substring(0, line.indexOf(seperatorChar));
-          var remainder = line.substring(line.indexOf(seperatorChar) + 1);
+          let line = allText.substring(0, allText.indexOf("\n"));
+          let curWord = line.substring(0, line.indexOf(seperatorChar));
+          let remainder = line.substring(line.indexOf(seperatorChar) + 1);
           dictionary[hash(curWord)] = remainder;
           allText = allText.substring(allText.indexOf("\n") + 1);
         }
