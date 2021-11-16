@@ -24,7 +24,7 @@ handleChange(event) {
         return(
            <div>
             <header class="textAnalysis">
-TextAnalysis
+Text Analysis
 </header>
 
 <div class="box">
@@ -36,7 +36,7 @@ TextAnalysis
 </ul>
 
 </div>
-<button onClick={this.handleChange}>Analyze</button>
+<button class="analysisButton" onClick={this.handleChange}>Analyze</button>
  </div>          
         )
     }
