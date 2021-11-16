@@ -8,11 +8,10 @@ let a = 0; // Romance
 let b = 0; // Germanic
 let c = 0; // Other
 let d = 0; // Total Number of Words
-
+let text = "Finally some sun under the clouds!";
 function Backend() {
-  let word = "cat";
-  let test = "Cat dog!"
   ParseDictionary();
+
   return (
 	<div>
         <p>
@@ -33,6 +32,7 @@ function Backend() {
 
 	</div>
   );
+  SeperateInput(text); // PROBLEM: ONLY THIS CALL TO SEPERATEINPUT WILL BE PROCESSED (in the constructor), OTHER CALLS TO SEPERATEINPUT IN OTHER FILES CURRENTLY NOT WORKING
 }
 
 export function Increment(number) {
@@ -62,14 +62,18 @@ export function GetValue(wordP){
   }
   return "Other";
 }
-// returns 0, 1, or 2 given a word. same as function 
+// returns 0, 1, or 2 given a word. same as function above
 export function GetValueNumber(wordP){
   let num = dictionary[Hash(wordP)];
+  return num;
 }
 
 // given a single string of words seperated by spaces, returns list of valid words
 export function SeperateInput(stringP){
   console.log("1");
+  if(stringP.length == 0){
+    return null;
+  }
   let strings = stringP.split(" ");
   a = 0;
   b = 0;
@@ -103,6 +107,7 @@ export function SeperateInput(stringP){
         b = b + 1;
       }
       else{
+        // to do: check for words ending in s (plural) or other odd endings
         c = c + 1;
       }
     }
@@ -117,33 +122,30 @@ export function SeperateInput(stringP){
 export function GetRomancePercent(){
   let percent = 0.0;
   if(d == 0){
-	return percent;
+	  return percent;
   }
-  console.log("In GetRomancePercent");
   percent = a / d;
   percent = percent * 100;
-  return percent;
+  return Math.round(percent);
 }
 
 export function GetGermanicPercent(){
   let percent = 0.0;
   if(d == 0){
-	return percent;
+	  return percent;
   }
-  console.log("In GetGermanicPercent");
   percent = b / d;
   percent = percent * 100;
-  return percent;
+  return Math.round(percent);
 }
 export function GetOtherPercent(){
   let percent = 0.0;
   if(d == 0){
-	return percent;
+	  return percent;
   }
-  console.log("In GetOtherPercent");
   percent = c / d;
   percent = percent * 100;
-  return percent;
+  return Math.round(percent);
 }
 
 //
@@ -174,14 +176,13 @@ export function ParseDictionary(){
           let line = allText.substring(0, allText.indexOf("\n"));
           let curWord = line.substring(0, line.indexOf(seperatorChar));
           let remainder = line.substring(line.indexOf(seperatorChar) + 1);
-          dictionary[Hash(curWord)] = remainder;
+          dictionary[Hash(curWord)] = remainder.substr(0, 1);
           allText = allText.substring(allText.indexOf("\n") + 1);
         }
       }
     }
   }
   rawFile.send();
-  console.log(dictionary);
 }
 
 export default Backend;
