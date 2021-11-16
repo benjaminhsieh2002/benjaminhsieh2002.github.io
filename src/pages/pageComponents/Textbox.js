@@ -1,5 +1,6 @@
 import React from "react";
 import "../../style/style.css"
+import {SeperateInput} from "../../Backend.js"
 
 class Textbox extends React.Component {
   constructor(props) {
@@ -11,9 +12,11 @@ class Textbox extends React.Component {
   }
 
   updateWordCount(textarea) {
-    let text = textarea.target.value;
-    this.setState({ wordCount: this.countWords(text)});
+  	let text = textarea.target.value;
+	this.setState({ wordCount: this.countWords(text)});
+	SeperateInput(text);
   }
+
 
   countWords(text) {
     return text.split(' ').length;

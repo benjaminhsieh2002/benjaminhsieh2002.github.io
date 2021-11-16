@@ -13,6 +13,7 @@ class TextAnalysis extends React.Component {
 	this.handleChange = this.handleChange.bind(this)
 }
 handleChange(event) {
+	
 	this.setState({
 	romancePercent: GetRomancePercent(),
 	germanicPercent : GetGermanicPercent(),
