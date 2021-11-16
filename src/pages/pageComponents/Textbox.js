@@ -33,7 +33,7 @@ class Textbox extends React.Component {
                 placeholder="Type or paste text here"
                 onChange={this.updateWordCount}
                 ></textarea>
-            <div>WordCount: {this.state.wordCount}</div>
+            <div class="wordCount">Word Count: {this.state.wordCount}</div>
         </div>
       
     );

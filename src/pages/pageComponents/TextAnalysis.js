@@ -1,8 +1,8 @@
 import React from "react"
 import "../../style/style.css"
-import GetRomancePercent from "../../Backend.js"
-import GetGermanicPercent from "../../Backend.js"
-import GetOtherPercent from "../../Backend.js"
+import {GetRomancePercent} from "../../Backend.js"
+import {GetGermanicPercent} from "../../Backend.js"
+import {GetOtherPercent} from "../../Backend.js"
 
 class TextAnalysis extends React.Component {
     render() {
