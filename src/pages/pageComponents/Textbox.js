@@ -28,7 +28,7 @@ class Textbox extends React.Component {
                 className="inputBox"
                 id="textBox"
                 name="textBox"
-                rows="15"
+                rows="17"
                 cols="75"
                 placeholder="Type or paste text here"
                 onChange={this.updateWordCount}
