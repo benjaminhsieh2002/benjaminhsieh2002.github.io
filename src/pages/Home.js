@@ -27,11 +27,8 @@ class Home extends React.Component {
 		<br/>
 		<Key />
 
-			 <TestingStyles />
-
 			</div>
 			</div>
-
 			</body>
 			</main>
 

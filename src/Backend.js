@@ -25,7 +25,7 @@ function Backend() {
           {word} is in the dictionary: {HasWord("dog")}
         </p>
 	      <p>
-          {test} has value {SeperateInput(test)}
+       //   {test} has value {SeperateInput(test)}
         </p>
         <p>
           Percent Romance: {GetRomancePercent()}
@@ -69,6 +69,7 @@ export function GetValueNumber(wordP){
 
 // given a single string of words seperated by spaces, returns list of valid words
 export function SeperateInput(stringP){
+  console.log("1");
   let strings = stringP.split(" ");
   a = 0;
   b = 0;
