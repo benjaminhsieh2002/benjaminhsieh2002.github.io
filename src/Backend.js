@@ -9,6 +9,7 @@ let b = 0; // Germanic
 let c = 0; // Other
 let d = 0; // Total Number of Words
 let text = "Finally some sun under the clouds!";
+let word;
 function Backend() {
   ParseDictionary();
 
