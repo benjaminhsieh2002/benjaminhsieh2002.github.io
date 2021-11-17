@@ -1,4 +1,3 @@
-
 import './App.css';
 
 // key is hash(word), value is list of language(s) in shorthand
@@ -9,30 +8,8 @@ let b = 0; // Germanic
 let c = 0; // Other
 let d = 0; // Total Number of Words
 let text = "Finally some sun under the clouds!";
-let word;
 function Backend() {
   ParseDictionary();
-
-  return (
-	<div>
-        <p>
-          Testing word: {word}
-        </p>
-        <p>
-          {word} is hash # {Hash(word)}
-        </p>
-        <p>
-          {word} is in the dictionary: {HasWord("dog")}
-        </p>
-	      <p>
-       //   {test} has value {SeperateInput(test)}
-        </p>
-        <p>
-          Percent Romance: {GetRomancePercent()}
-        </p>
-
-	</div>
-  );
   SeperateInput(text); // PROBLEM: ONLY THIS CALL TO SEPERATEINPUT WILL BE PROCESSED (in the constructor), OTHER CALLS TO SEPERATEINPUT IN OTHER FILES CURRENTLY NOT WORKING
 }
 
@@ -71,7 +48,6 @@ export function GetValueNumber(wordP){
 
 // given a single string of words seperated by spaces, returns list of valid words
 export function SeperateInput(stringP){
-  console.log("1");
   if(stringP.length == 0){
     return null;
   }
