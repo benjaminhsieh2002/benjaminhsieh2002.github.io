@@ -1,7 +1,7 @@
 import "../style/style.css"
 import React from "react"
 import hash from "../Backend"
-import "../Backend"
+import {Backend} from "../Backend"
 import { Link } from "react-router-dom";
 import Textbox from "./pageComponents/Textbox"
 import TextAnalysis from "./pageComponents/TextAnalysis";
@@ -10,6 +10,7 @@ import TestingStyles from "./pageComponents/TestingStyles";
 
 class Home extends React.Component {
 	render() {
+		Backend();
 		return(
 		<div>
 			
@@ -26,7 +27,6 @@ class Home extends React.Component {
 		<TextAnalysis />
 		<br/>
 		<Key />
-
 			</div>
 			</div>
 			</body>

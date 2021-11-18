@@ -8,15 +8,11 @@ let b = 0; // Germanic
 let c = 0; // Other
 let d = 0; // Total Number of Words
 let text = "Finally some sun under the clouds!";
-function Backend() {
+export function Backend() {
   ParseDictionary();
-  SeperateInput(text); // PROBLEM: ONLY THIS CALL TO SEPERATEINPUT WILL BE PROCESSED (in the constructor), OTHER CALLS TO SEPERATEINPUT IN OTHER FILES CURRENTLY NOT WORKING
+  TestParseDictionary();
+  SeparateInput(text); // PROBLEM: ONLY THIS CALL TO SEPERATEINPUT WILL BE PROCESSED (in the constructor), OTHER CALLS TO SEPERATEINPUT IN OTHER FILES CURRENTLY NOT WORKING
 }
-
-export function Increment(number) {
-  alert(number + 1);
-}
-
 // returns true if dictionary contains word.
 export function HasWord(wordP){
   if(dictionary[Hash(wordP)] == null){
@@ -47,7 +43,7 @@ export function GetValueNumber(wordP){
 }
 
 // given a single string of words seperated by spaces, returns list of valid words
-export function SeperateInput(stringP){
+export function SeparateInput(stringP){
   if(stringP.length == 0){
     return null;
   }
@@ -62,25 +58,25 @@ export function SeperateInput(stringP){
     for(let j = 0; j < strings[i].length; j++){ // for each char
       let c = strings[i].charCodeAt(j);
       let updatedC;
-      if(c > 64 && c < 91){
-        updatedC = String.fromCharCode(c + 32);
-        newString += updatedC;
+      if(c > 64 && c < 91){ //If char is uppercase
+        updatedC = String.fromCharCode(c + 32); // Make lowercase
+        newString += updatedC; //Add to newstring
       }
-      else if ((c < 65 || c > 122 ) || (c > 90 && c < 97)){
+      else if ((c < 65 || c > 122 ) || (c > 90 && c < 97)){ // If char is not alphabetic
         //do nothing
       }
       else{
-        newString += String.fromCharCode(c);
+        newString += String.fromCharCode(c); //Add to newstring
       }
     }
-    strings[i] = newString;
+    strings[i] = newString; // Add newstring to strings
   }
   for(i = 0; i < strings.length; i++){
-    if(HasWord(strings[i])){
-      if(GetValueNumber(strings[i]) == 0){
+    if(HasWord(strings[i])){ // Checks if the word's hash is in the dictionary
+      if(GetValueNumber(strings[i]) == 0){ // If the word's etymology is romance
         a = a + 1;
       }
-      else if(GetValueNumber(strings[i]) == 1){
+      else if(GetValueNumber(strings[i]) == 1){ // If the word's etymology is germanic
         b = b + 1;
       }
       else{
@@ -89,14 +85,24 @@ export function SeperateInput(stringP){
       }
     }
     else{
+    //  alert("Doesn't have word!")
       c = c + 1;
     }
-    d = d + 1;
+    d = d + 1; // d represents total words parsed
   }
-  return strings;
+//  alert("Incoming value of strings from SeparateInput:")
+//  alert(strings)
+  return strings; //strings works exactly as it should
 }
 
-export function GetRomancePercent(){
+export function EtymCountTest(){
+  let etymList = [a, b, c, d];
+  return etymList;
+}
+
+export function GetRomancePercent(){ // a is zero when it shouldn't be
+//  alert("All words in the etymology dictionary incoming:")
+//  alert(JSON.stringify(dictionary))
   let percent = 0.0;
   if(d == 0){
 	  return percent;
@@ -122,7 +128,7 @@ export function GetOtherPercent(){
   }
   percent = c / d;
   percent = percent * 100;
-  return Math.round(percent);
+  return Math.round(percent); //Pass from GetOtherPercent to frontend works
 }
 
 //
@@ -140,6 +146,10 @@ export function Hash(stringP){
   return h;
 }
 
+export function TestParseDictionary(){
+  dictionary[Hash("president")] = "0";
+}
+
 // opens text file, reads each line, and saves information to dictionary
 export function ParseDictionary(){
   let rawFile = new XMLHttpRequest();
@@ -154,9 +164,13 @@ export function ParseDictionary(){
           let curWord = line.substring(0, line.indexOf(seperatorChar));
           let remainder = line.substring(line.indexOf(seperatorChar) + 1);
           dictionary[Hash(curWord)] = remainder.substr(0, 1);
+          //alert("dictionary: ")
+          //alert(dictionary)
           allText = allText.substring(allText.indexOf("\n") + 1);
         }
       }
+    }
+    else {
     }
   }
   rawFile.send();

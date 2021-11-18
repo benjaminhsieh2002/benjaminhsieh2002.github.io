@@ -1,20 +1,21 @@
 import React from "react";
 import "../../style/style.css"
-import {SeperateInput} from "../../Backend.js"
+import {SeparateInput} from "../../Backend.js"
 
 class Textbox extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      wordCount: 0
+      wordCount: 0,
+      text: ""
     };
     this.updateWordCount = this.updateWordCount.bind(this)
   }
 
   updateWordCount(textarea) {
   	let text = textarea.target.value;
-	this.setState({ wordCount: this.countWords(text)});
-	SeperateInput(text);
+  this.setState({ wordCount: this.countWords(text)});
+	SeparateInput(text);
   }
 
 
