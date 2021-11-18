@@ -6,9 +6,9 @@ class TextAnalysis extends React.Component {
 	constructor(props){
 	super(props);
 	this.state = {
-		romancePercent : GetRomancePercent(),
-		germanicPercent : GetGermanicPercent(),
-		otherPercent: GetOtherPercent()
+		romancePercent : 0,
+		germanicPercent : 0,
+		otherPercent: 0
 	};
 	this.handleChange = this.handleChange.bind(this)
 }
@@ -29,7 +29,6 @@ class TextAnalysis extends React.Component {
 
 				<div class="box">
 					<ul>
-						<li style={{color: "gray"}}>Words: </li> {/* TODO: Make same color as the rest*/}
 						<li class="box-percent box-percent-Romance">{this.state.romancePercent}% Romance</li>
 						<li class="box-percent box-percent-Germanic">{this.state.germanicPercent}% Germanic</li>
 						<li class="box-percent box-percent-Other">{this.state.otherPercent}% Other</li>
