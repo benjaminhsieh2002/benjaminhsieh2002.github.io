@@ -8,11 +8,11 @@ let a = 0; // Romance
 let b = 0; // Germanic
 let c = 0; // Other
 let d = 0; // Total Number of Words
-let text = "Finally some sun under the clouds!";
+let text = "";
 export function Backend() {
   ParseDictionary();
   TestParseDictionary();
-  SeparateInput(text); // PROBLEM: ONLY THIS CALL TO SEPERATEINPUT WILL BE PROCESSED (in the constructor), OTHER CALLS TO SEPERATEINPUT IN OTHER FILES CURRENTLY NOT WORKING
+  SeparateInput(text);
 }
 // returns true if dictionary contains word.
 export function HasWord(wordP){
