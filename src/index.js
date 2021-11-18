@@ -4,6 +4,11 @@ import './index.css';
 import Main from './Main'
 import reportWebVitals from './reportWebVitals';
 
+class App extends React.Component {
+  render() {
+    return (<div className = "App"> <h1> Hello there! </h1></div>) } }
+       
+
 ReactDOM.render(
   <Main />,
   document.getElementById('root')
