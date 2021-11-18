@@ -1,4 +1,5 @@
 import './App.css';
+import {GetWordCount} from './pages/pageComponents/Textbox.js'
 
 // key is hash(word), value is list of language(s) in shorthand
 let dictionary = {};

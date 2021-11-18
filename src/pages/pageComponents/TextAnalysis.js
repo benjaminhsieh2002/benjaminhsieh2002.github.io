@@ -29,6 +29,7 @@ class TextAnalysis extends React.Component {
 
 				<div class="box">
 					<ul>
+						<li style={{color: "gray"}}>Words: </li> {/* TODO: Make same color as the rest*/}
 						<li class="box-percent box-percent-Romance">{this.state.romancePercent}% Romance</li>
 						<li class="box-percent box-percent-Germanic">{this.state.germanicPercent}% Germanic</li>
 						<li class="box-percent box-percent-Other">{this.state.otherPercent}% Other</li>
