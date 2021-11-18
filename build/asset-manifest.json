@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a4d4a42b.chunk.css",
+    "main.js": "/static/js/main.9cef49eb.chunk.js",
+    "main.js.map": "/static/js/main.9cef49eb.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.14dd2ac3.js",
+    "runtime-main.js.map": "/static/js/runtime-main.14dd2ac3.js.map",
+    "static/js/2.6473f2bc.chunk.js": "/static/js/2.6473f2bc.chunk.js",
+    "static/js/2.6473f2bc.chunk.js.map": "/static/js/2.6473f2bc.chunk.js.map",
+    "static/js/3.e17168de.chunk.js": "/static/js/3.e17168de.chunk.js",
+    "static/js/3.e17168de.chunk.js.map": "/static/js/3.e17168de.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.a4d4a42b.chunk.css.map": "/static/css/main.a4d4a42b.chunk.css.map",
+    "static/js/2.6473f2bc.chunk.js.LICENSE.txt": "/static/js/2.6473f2bc.chunk.js.LICENSE.txt",
+    "static/media/Benjamin.6644c0d1.jpeg": "/static/media/Benjamin.6644c0d1.jpeg",
+    "static/media/Bo.f30df6c1.jpeg": "/static/media/Bo.f30df6c1.jpeg",
+    "static/media/Connor.fc4f6c83.jpg": "/static/media/Connor.fc4f6c83.jpg",
+    "static/media/Sean.845d2af4.jpeg": "/static/media/Sean.845d2af4.jpeg",
+    "static/media/Sophia.105def65.jpeg": "/static/media/Sophia.105def65.jpeg",
+    "static/media/TraceRootLogo.d95188ee.jpg": "/static/media/TraceRootLogo.d95188ee.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.14dd2ac3.js",
+    "static/js/2.6473f2bc.chunk.js",
+    "static/css/main.a4d4a42b.chunk.css",
+    "static/js/main.9cef49eb.chunk.js"
+  ]
+}
