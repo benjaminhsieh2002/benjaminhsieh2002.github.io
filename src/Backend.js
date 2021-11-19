@@ -8,11 +8,11 @@ let a = 0; // Romance
 let b = 0; // Germanic
 let c = 0; // Other
 let d = 0; // Total Number of Words
-let text = "Finally some sun under the clouds!";
+let text = "";
 export function Backend() {
   ParseDictionary();
   TestParseDictionary();
-  SeparateInput(text); // PROBLEM: ONLY THIS CALL TO SEPERATEINPUT WILL BE PROCESSED (in the constructor), OTHER CALLS TO SEPERATEINPUT IN OTHER FILES CURRENTLY NOT WORKING
+  SeparateInput(text);
 }
 // returns true if dictionary contains word.
 export function HasWord(wordP){
@@ -45,14 +45,14 @@ export function GetValueNumber(wordP){
 
 // given a single string of words seperated by spaces, returns list of valid words
 export function SeparateInput(stringP){
-  if(stringP.length == 0){
-    return null;
-  }
-  let strings = stringP.split(" ");
   a = 0;
   b = 0;
   c = 0;
   d = 0;
+  if(stringP.length == 0){
+    return null;
+  }
+  let strings = stringP.split(" ");
   let i = 0;
   for(i = 0; i < strings.length; i++){ // for each word
     let newString = "";
